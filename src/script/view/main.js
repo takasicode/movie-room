@@ -2,11 +2,11 @@ import "../components/search.js";
 import $ from "jquery";
 
 const main = () => {
-  const APIKey = "api_key=a064b3b555457d5fd1dc005b54ba530c";
-  const BaseURL = "https://api.themoviedb.org/3";
-  const API_URL = BaseURL + "/movie/upcoming?" + APIKey;
-  const ImageURl = "https://image.tmdb.org/t/p/original/";
-  const searchURL = BaseURL + "/search/movie?" + APIKey;
+  const APIKey =
+    "https://api.themoviedb.org/3/movie/upcoming?api_key=a064b3b555457d5fd1dc005b54ba530c";
+  const ImageURL = "https://image.tmdb.org/t/p/original/";
+  const searchURL =
+    "https://api.themoviedb.org/3/search/movie?api_key=a064b3b555457d5fd1dc005b54ba530c";
 
   const navbarShadowRoot = document.getElementsByTagName("search-bar");
   const formElement =
@@ -38,7 +38,7 @@ const main = () => {
       const { title, poster_path, release_date, popularity } = movie;
       $("#movies").append(`
             <div class="card-movie">
-                <img src="${ImageURl + poster_path}" alt="${title}">
+                <img src="${ImageURL + poster_path}" alt="${title}">
                 <div class="info-movie">
                     <p class="title-movie">${title}</p>
                     <p class="release-movie">${release_date}</p>
@@ -48,7 +48,7 @@ const main = () => {
             `);
     });
   };
-  getMovies(API_URL);
+  getMovies(APIKey);
 
   formElement.addEventListener("submit", e => {
     e.preventDefault();
@@ -56,7 +56,7 @@ const main = () => {
     if (searchTerm) {
       getMovies(`${searchURL}&query=${searchTerm}`);
     } else {
-      getMovies(API_URL);
+      getMovies(APIKey);
     }
   });
 };
