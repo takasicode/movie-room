@@ -29,5 +29,5 @@ Start the server
 ![App Screenshot](./src/images/screenshot/screencapture.png)
 
 ## Tech Stack
-[![My Skills](https://skillicons.dev/icons?i=html,css,js,npm,webpack)](https://github.com/takasicode/movie-room)
+[![My Skills](https://skillicons.dev/icons?i=html,css,js,nodejs,npm,webpack)](https://github.com/takasicode/movie-room)
  
