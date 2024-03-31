@@ -1,5 +1,5 @@
 # Movie Room
-Submission: Membuat Aplikasi Web dengan ES6, Custom Element, NPM, Webpack, dan AJAX
+Submission: Membuat Aplikasi Web dengan ES6, Custom Element, NPM, Webpack, dan AJAX pada kelas Belajar Fundamental Front-End Web Development
 
 ## Run Locally
 Clone the project
